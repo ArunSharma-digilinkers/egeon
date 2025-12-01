@@ -1,0 +1,196 @@
+/*===============================================================
+	Fonts
+=================================================================*/
+body {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/*===============================================================
+	Common font sizes and styles
+=================================================================*/
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+h6 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+p {
+    color: $color-text;
+    margin-bottom: 1rem;
+}
+.txt-center {
+	text-align: center;
+}
+.txt-upper {
+	text-transform: uppercase;
+}
+.txt-capitalize {
+    text-transform: capitalize;
+}
+.txt-light {
+    color: $color-white;
+}
+
+body.dark {
+    background-color: $dark-mode;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-white;
+    }
+
+    p {
+        color: $light-bg;
+        font-weight: 300;
+    }
+}
+.title-accent {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        width: 100px;
+        height: 2px;
+        background-color: $color-highlight-dark;
+    }
+}
+.title-dual {
+    font-weight: 400;
+
+    span {
+        font-weight: 800;
+        color: $color-bright;
+    }
+}
+.title-bg {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: transparent;
+    background-image: url('../img/mountain.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+}
+.title-gradient {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: transparent;
+    background: linear-gradient($color-primary, $color-bright);
+    background-clip: text;
+}
+.title-bg-dual {
+    text-transform: uppercase;
+    font-weight: 800;
+    display: inline-block;
+    background-color: $color-highlight;
+    color: $color-bright;
+    padding-left: 5px;
+
+    span {
+        display: inline-block;
+        background-color: $color-bright;
+        color: $color-highlight;
+        padding: 0 5px;
+    }
+}
+.title-oblique {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $color-white;
+    background-color: $color-primary;
+    position: relative;
+    padding-left: 5px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        right: -2%;
+        width: 50%;
+        background-color: $color-white;
+        transform: skewX(45deg);
+    }
+}
+.title-pseudo {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $color-white;
+    background-color: $color-primary;
+    position: relative;
+    padding: 0 10px;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -12px;
+        width: 10px;
+        background-color: $color-primary;
+    }
+}
+.title-end {
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    padding-right: 10px;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 9px;
+        right: -6px;
+        width: 8px;
+        height: 8px;
+        background-color: $color-bright;
+    }
+}
+.title-shadow {
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    margin-top: 5rem;
+
+    &::before {
+        content: 'this is a heading';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -75px;
+        font-size: 70px;
+        color: $color-white;
+        background-color: $color-white;
+        text-shadow: -1px -1px 0 #dadada, 1px -1px 0 #dadada, -1px 1px 0 #dadada, 1px 1px 0 #dadada;
+    }
+}

@@ -1,0 +1,73 @@
+/*====================================================================
+	Tabs style-1
+=====================================================================*/
+.tabs-section-1 {
+	max-width: 100rem;
+	margin: 5rem auto 0 auto;
+	background-color: $light-bg2;
+	
+	.tabs-btn-wrap {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.tabs-sc-btn {
+		margin-right: 2.5rem;
+		transform: translateY(-50%);
+		border-radius: 50px;
+	}
+	
+	.tabs-sc-btn span {
+		margin-right: 1rem;
+		font-weight: 600;
+		display: inline-block;
+	}
+	
+	.tabs-sc-btn-1 {
+		background-color: $color-highlight;
+	}
+	
+	.tabs-sc-btn-1:hover {
+		background-color: $color-highlight-dark;
+	}
+	
+	.tabs-sc-btn-2 {
+		background-color: #35e753;
+	}
+	
+	.tabs-sc-btn-2:hover {
+		background-color: #16bb32;
+	}
+	
+	.tabs-sc-btn-3 {
+		background-color: #ff728b;
+		margin: 0;
+	}
+	
+	.tabs-sc-btn-3:hover {
+		background-color: #e5536d;
+	}
+	
+	.tabs-sc-btn-active {
+		transform: translateY(-66%);
+	}
+	
+	.tabs-content {
+		display: none;
+		padding: 2.5rem 7rem 6.5rem 7rem;
+	}
+	
+	.tabs-content-active {
+		display: block;
+	}
+	
+	.tabs-header {
+		font-size: 1.8rem;
+		font-weight: 500;
+		align-self: center;
+	}
+}
+
+.dark .tabs-section-1 {
+	background-color: $dark-mode-contrast;
+}

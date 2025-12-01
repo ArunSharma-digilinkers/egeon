@@ -1,0 +1,247 @@
+/*====================================================================
+	Cards general
+=====================================================================*/
+.card {
+	border: none;
+	border-radius: 0;
+	position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+	border-radius: 15px;
+	overflow: hidden;
+	cursor: pointer;
+
+	img {
+		transition: all 0.8s ease;
+	}
+
+	&:hover img {
+		transform: scale(1.1);
+	}
+}
+
+.card-title {
+	text-align: center;
+
+	a {
+		font-size: 18px;
+		color: $color-black;
+		padding: 10px 20px;
+		font-weight: 500;
+		display: block;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
+
+.card-text {
+	text-align: center;
+}
+
+.admin-card {
+	height: 100%;
+
+	.card-body {
+		height: 100%;
+	}
+}
+
+/*====================================================================
+	Card layout-1
+=====================================================================*/
+.card-1 {
+	height: 100%;
+
+	.card-img {
+		background-color: $light-bg2;
+		border-radius: 0;
+		position: relative;
+
+		.cta {
+			background-color: $color-black;
+			color: $color-white;
+			padding: 6px;
+			text-align: center;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: -36px;
+			left: 0;
+			right: 0;
+			transition: all .4s;
+		}
+
+		.cart-cta {
+			position: absolute;
+			right: -41px;
+			top: 10px;
+			transition: all .4s;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+
+				a {
+					background-color: $color-white;
+					color: $color-black;
+					padding: 7px;
+					display: inline-block;
+					margin-bottom: 8px;
+					border: 1px solid $light-bg3;
+
+					i {
+						width: 25px;
+						height: 25px;
+						line-height: 25px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	&:hover {
+		.card-img {
+
+			img {
+				transform: scale(1.08);
+			}
+
+			.cta {
+				bottom: 0;
+			}
+
+			.cart-cta {
+				right: 10px;
+			}
+		}
+	}
+	
+	.card-description {
+		padding: 1rem 0;
+	}
+}
+.dark .card-1 {
+	background-color: $dark-mode-contrast;
+}
+
+/*====================================================================
+	Card layout-2
+=====================================================================*/
+.card-2 {
+	position: relative;
+	height: 100%;
+	background-color: $light-bg2;
+	
+	&__content {
+		padding: 1rem 1.5rem 4rem;
+	}
+	
+	&__title {
+		padding: 0.5rem;
+	}
+	
+	&__footer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		text-align: center;
+		padding: 1rem ;
+	}
+
+	&__colors {
+		text-align: center;
+		margin-bottom: 1rem;
+
+		span.product-color-thumb {
+			height: 5px;
+			line-height: 5px;
+			border-radius: 2px;
+		}
+	}
+
+	&__category {
+		text-align: center;
+		margin-bottom: 1rem;
+
+		p {
+			margin: 0;
+			font-size: 1.2rem;
+		}
+	}
+
+	&__price {
+		text-align: center;
+		margin-bottom: 1rem;
+
+		p {
+			margin: 0;
+		}
+	}
+}
+.dark {
+	.card-2 {
+		background-color: $dark-bg;
+	}
+}
+
+/*====================================================================
+	Card side layout-1
+=====================================================================*/
+.card-side {
+    display: flex;
+    background-color: $light-bg;
+    overflow: hidden;
+    position: relative;
+
+    &__image {
+        position: relative;
+        overflow: hidden;
+		flex: 0 0 40%;
+    }
+
+	&__body {
+		padding: 20px;
+    	flex: 0 0 60%;
+	}
+
+	&__content {
+		margin-bottom: 0.75rem;
+	}
+
+	&__title {
+		font-size: 1.2rem;
+	}
+
+	a {
+		display: inline-block;
+	}
+}
+
+.dark .card-side {
+	background-color: $dark-mode-contrast;
+}
+
+/*====================================================================
+	Order Card
+=====================================================================*/
+.order-card {
+	.card-header {
+		background-color: $color-primary;
+		border-radius: 0 !important;
+		color: $color-white;
+	}
+	
+	.card-body-section {
+		display: flex;
+
+		.p1 {
+			flex: 0 0 170px;
+		}
+	}
+}

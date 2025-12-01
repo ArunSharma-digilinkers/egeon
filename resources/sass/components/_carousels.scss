@@ -1,0 +1,100 @@
+/*====================================================================
+	Banners style 1 Bootstrap carousel
+=====================================================================*/
+#digiCarousel {
+    .carousel-item {
+        position: relative;
+        width: 100%;
+        padding-bottom: 35%;
+        @include background-image;
+    }
+    .carousel-item1 {
+        background-image: url('../img/banner-1.jpg');
+    }
+    .carousel-item2 {
+        background-image: url('../img/banner-2.jpg');
+    }
+    .carousel-item3 {
+        background-image: url('../img/banner-3.jpg');
+    }
+    .carousel-caption {
+        right: 50%;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: 10%;
+        text-align: left;
+        
+        h5 {
+            color: $color-white;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        p {
+            color: $color-white;
+            padding-right: 100px;
+        }
+    }
+}
+
+/*====================================================================
+	Banners style 2 Swiper carousel
+=====================================================================*/
+.carousel-wrapper-cube {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 31.25%;
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .slide1 {
+            background-image: url('../img/banner-1.jpg');
+        }
+        
+        .slide2 {
+            background-image: url('../img/banner-2.jpg');
+        }
+        
+        .slide3 {
+            background-image: url('../img/banner-3.jpg');
+        }
+    }
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    background: $color-white;
+}
+
+.carousel-wrapper-flip {
+    overflow: hidden;
+    position: relative;
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+        
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+    }
+}

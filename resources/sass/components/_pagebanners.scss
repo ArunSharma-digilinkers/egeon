@@ -1,0 +1,28 @@
+/*====================================================================
+	Page banners layout-1
+=====================================================================*/
+.page-banner {
+    position: relative;
+    width: 100%;
+
+    .page-banner-caption {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+	    transform: translateY(-50%);
+
+        h5 {
+            font-size: 2.5rem;
+        }
+    }
+}
+.page-banner.carousel {
+    padding: 0;
+}
+.page-banner-rt {
+	position: absolute;
+	right: 10%;
+	width: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+}

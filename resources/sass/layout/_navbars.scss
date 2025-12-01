@@ -1,0 +1,11 @@
+.navbar.dd-nav {
+	position: relative;
+	background-color: $color-white !important;
+	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+
+	.dropdown-menu {
+		border: none;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 0.25rem;
+	}
+}

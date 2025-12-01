@@ -1,0 +1,24 @@
+// Bootstrap
+// @import 'bootstrap/scss/bootstrap';
+// @import "bootstrap-icons/font/bootstrap-icons.css";
+
+// Custom css
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/cards";
+@import "components/carousels";
+@import "components/modals";
+@import "components/pagebanners";
+@import "components/tabs";
+
+@import "layout/columns";
+@import "layout/footers";
+@import "layout/forms";
+@import "layout/navbars";
+
+@import "custom";

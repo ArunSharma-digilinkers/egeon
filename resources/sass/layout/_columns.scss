@@ -1,0 +1,65 @@
+/*====================================================================
+	Two column layout-1
+=====================================================================*/
+.two-col-l1 {
+	height: 100%;
+
+	&__image {
+		height: 100%;
+		background-image: url('../img/office.jpg');
+		@include background-image;
+	}
+
+	&__content {
+		height: 100%;
+	}
+
+	&__text {
+		margin-bottom: 2rem;
+	}
+}
+/*====================================================================
+	Three column layout-1
+=====================================================================*/
+.three-column.layout-1 {
+	margin-bottom: 2rem;
+}
+/*====================================================================
+	Three column layout-2
+=====================================================================*/
+.three-column.layout-2 {
+	margin-bottom: 2rem;
+}
+
+.section-wrapper {
+	padding: 2rem 0;
+}
+
+.sub-section-wrapper {
+	padding: 2rem 0;
+}
+
+.card-wrap {
+	margin-bottom: 2rem;
+}
+
+.lead-text {
+	padding-left: 35px;
+	position: relative;
+	color: #333;
+	font-size: 20px;
+}
+
+.lead-text::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: -10px;
+	bottom: -10px;
+	width: 3px;
+	background-color: #fac952;
+}
+
+.y-sec {
+	color: #fac952;
+}
