@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light dd-nav">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="" alt="">
+        <a class="navbar-brand" href="">
+            <img src="img/logo.png" alt="" class="img-fluid logo-img">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span> logo.png
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -14,6 +14,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
                 </li>
                 @if (Auth::check())
                     <li class="nav-item dropdown">
