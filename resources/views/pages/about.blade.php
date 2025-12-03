@@ -1,36 +1,39 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class="banner-wrap">
+    <div class="banner-wrap">
         <img src="img/about-banner.jpg" class="img-fluid">
     </div>
 
-<div class="ab-info section-entry">
+    <div class="ab-info section-entry">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
                     <div class="text-center">
                         <h5>About Egeone Batteries</h5>
                         <h3>Powering the Future, One Cell at a Time</h3>
-                        <p>Egeone Batteries is at the forefront of next-generation energy storage solutions. We specialize
+                        <p>
+                            Egeone Batteries is at the forefront of next-generation energy storage solutions. We specialize
                             in high-performance, eco-friendly battery technologies engineered to meet the growing global
                             demand for clean, reliable power. From grid-scale systems to smart mobility applications, our
                             mission is to revolutionize how energy is stored and used—delivering efficiency, safety, and
                             sustainability for industries, homes, and the planet. Built on innovation and driven by purpose,
-                            Egeone Batteries empowers the transition to a cleaner energy future.</p>
+                            Egeone Batteries empowers the transition to a cleaner energy future.
+                        </p>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <h5>Our Vision & Strategy</h5>
                     <h3>Shaping the Future of Energy with Purpose and Precision</h3>
-                    <p>At Egeone, our vision is to lead the global transition to clean and intelligent energy solutions. We
+                    <p>
+                        At Egeone, our vision is to lead the global transition to clean and intelligent energy solutions. We
                         are committed to building a more sustainable world through breakthrough battery technologies and
                         smart storage systems that power everything—from homes and cities to industries and mobility. Our
                         strategy is rooted in continuous innovation, global collaboration, and deep integration. We focus on
                         delivering scalable, efficient, and eco-conscious solutions that empower communities and drive
-                        real-world impact, today and for generations to come.</p>
+                        real-world impact, today and for generations to come.
+                    </p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <img src="img/info-img.jpg" class="img-fluid br15">
@@ -40,7 +43,7 @@
     </div>
 
 
-    <div class="why-choose-wrapper">
+    <div class="why-choose-wrapper mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5 col-sm-12">
@@ -68,4 +71,96 @@
         </div>
     </div>
 
+    <div class="about-cta-wrapper section-entry">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="about-cta-wrap">
+                        <h2>Innovative energy solutions to power homes,<br> businesses, and vehicles.</h2>
+                        <p>At Egeone, we believe in powering progress sustainably. From residential and commercial energy
+                            systems to electric vehicle power solutions, our technology is designed to improve energy
+                            efficiency and reduce your carbon footprint. Start your journey towards a greener, more
+                            efficient future today. Get in touch with us for more information on how Egeone can support you
+                        </p>
+
+                        <div class="about-btn">
+                            <a href="contact">Request Your Free Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="faq-wrapper section-entry">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="faq-box">
+                        <h5>Got Questions? We’ve Got Answers!</h5>
+                        <h3>Explore the most common questions from our customers.</h3>
+
+                        <p>We’ve put together a list of frequently asked questions to make it easier for you to find the
+                            information you need. Whether you're curious about our offerings or how to get started, you can
+                            find answers right here. Don’t hesitate to contact us if you need further assistance!</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <section id="faq" class="faq-section">
+
+                        <div class="faq-container">
+                            <!-- FAQ 1 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">What services do you offer?</button>
+                                <div class="faq-content">
+                                    <p>We offer a wide range of services including energy-efficient solutions, electric
+                                        mobility, and battery storage systems for both residential and commercial use.</p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">How can I contact customer support?</button>
+                                <div class="faq-content">
+                                    <p>You can contact customer support via email at support@example.com or by calling our
+                                        24/7 helpline at (123) 456-7890.</p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">Do you offer a warranty on your products?</button>
+                                <div class="faq-content">
+                                    <p>Yes, all of our products come with a standard 2-year warranty, covering manufacturing
+                                        defects and performance issues.</p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">How do I place an order?</button>
+                                <div class="faq-content">
+                                    <p>Simply visit our products page, select the items you want, and follow the checkout
+                                        process to complete your order.</p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 5 -->
+                            <div class="faq-item">
+                                <button class="faq-btn">What payment methods do you accept?</button>
+                                <div class="faq-content">
+                                    <p>We accept a wide range of payment methods, including credit/debit cards, PayPal, and
+                                        bank transfers. We also offer secure online payment options for your convenience.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

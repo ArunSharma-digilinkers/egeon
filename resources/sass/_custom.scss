@@ -54,8 +54,8 @@ p {
      line-height: 30px;
 }
 
-.direction-flex {
-    display: flex;
+.flex-direction {
+        display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -180,6 +180,20 @@ p {
         font-weight: 300;
     }
 
+
+}
+
+.pro-btn {
+margin-top: 60px;
+text-align: center;
+
+a {
+    background-color: #04359c;
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 15px;
+}
+
 }
 
 .pro-box {
@@ -216,19 +230,33 @@ p {
 
     .test-wrap {
        background: #FFF;
-       background: radial-gradient(circle, rgb(255, 255, 255) 25%, rgb(4 53 156) 100%);
+       background: radial-gradient(circle, rgb(255, 255, 255) 50%, rgb(4 53 156) 100%);
         padding: 20px;
-        text-align: center;
+        
         border-radius: 15px;
 
         h4 {
             color: #000;
+            font-size: 17px;
         }
+
+        p{
+            color: #000;
+        }
+
+      
 
         img {
             border-radius: 50%;
             width: 110px;
         }
+    }
+
+    .test-img-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: anchor-center;
+        margin-bottom: 25px;
     }
 
     .test-img-box {
@@ -245,9 +273,151 @@ p {
 
 }
 
+/////////////////////// ABOUT US ///////////////////////
+
+.about-cta-wrapper {
+    background-image: url(http://[::1]:5173/public/img/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: #000000ba;
+    padding: 150px 0;
+
+    h2 {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .about-btn {
+
+        margin-top: 30px;
+        
+        a{
+            background-color: #fff;
+            color: #000;
+            padding: 15px 70px;
+            border-radius: 15px;
+        }
+    }
+}
+
+.faq-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.faq-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq-subheading {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: #e3e3e3;
+    color: #000000;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.faq-btn:hover {
+    background-color: #7e7e7e;
+    color: #fff;
+}
+
+.faq-content {
+    padding: 10px 15px;
+    display: none;
+    background-color: #f1f1f1;
+    border-left: 3px solid #007BFF;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/////////////////////// OUR PRODUCTS ///////////////////////
+
+.pro-img-box img {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.btn-1 {
+
+    margin-top: 30px;
+    
+    a {
+    background-color: #04359c;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 15px;
+}
+}
+
+/////////////////////// CONTACT US ///////////////////////
+
+.contact-form-wrap {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 40px 25px;
+    border-radius: 15px;
+}
 
 
-/////////////////////// footer ///////////////////////
+.cont-box {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+
+    i {
+            color: #ffffff;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s;
+    background: #fff;
+    border-radius: 6px;
+    background-color: #04359c;
+    }
+
+    .cont-txt {
+        margin-left: 15px;
+    }
+}
+
+/////////////////////// FOOTER ///////////////////////
 
 
 .footer-wrapper {
@@ -288,6 +458,7 @@ p {
 		line-height: 35px;
 		transition: all 0.3s;
 		background: #fff;
+        border-radius: 6px;
 
 	}
 

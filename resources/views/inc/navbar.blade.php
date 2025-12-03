@@ -16,10 +16,10 @@
                     <a class="nav-link" href="{{url("about")}}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="{{url("products")}}">our products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
+                    <a class="nav-link" href="{{url("contact")}}">Contact us</a>
                 </li>
                 @if (Auth::check())
                     <li class="nav-item dropdown">

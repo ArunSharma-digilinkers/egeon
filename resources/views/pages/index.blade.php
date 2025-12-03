@@ -16,30 +16,27 @@
                     <p>
                         At Egeone Batteries, we specialize in delivering cutting-edge energy storage products built for
                         reliability and performance. Whether you need advanced lithium-ion batteries, robust lead-acid
-                        options, or efficient solar battery systems, our range is engineered to meet diverse energy needs
-                        with long-lasting power, safety, and innovation. Empower your future with Egeone — where energy
-                        meets excellence.
+                        options, or efficient solar battery systems, our range is engineered to meet diverse energy needs meets excellence.
                     </p>
 
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="info-box">
+                            <div class="info-box mt-1">
                                 <h4><span>10,000+ </span>Satisfied Clients</h4>
                                 <p>We're proud to serve thousands of businesses across industries with reliable solutions
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="info-box">
+                            <div class="info-box mt-1">
                                 <h4><span>24/7 </span>Customer Support</h4>
                                 <p>Around-the-clock expert assistance whenever you need it.</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-12">
-                    <img src="img/home-info-img.jpg" class="img-fluid br15">
+                    <img src="img/home-info-img-1.jpg" class="img-fluid br15">
                 </div>
             </div>
         </div>
@@ -174,6 +171,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="pro-btn">
+                       <a href=""> View All Products </a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -215,18 +217,56 @@
                         <div class="item">
                             <div class="test-wrap">
 							<div class="test-img-box">
-								
-                                <h4>Rachin Sodhi</h4>
+								<img src="img/client.png" class="img-fluid">
+                                <h4>Rachin Sodhi<br><span>Happy customer</span></h4>
 
-								<div class="rating-box">
+							</div>
+							<div class="test-txt-box">
+                                <div class="rating-box">
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 								</div>
+								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste consequuntur, architecto tempora saepe sed cumque ut nesciunt quas. Asperiores qui accusantium sunt reiciendis dicta culpa ex aliquam maiores obcaecati.</p>
+							</div>
+						</div>
+                        </div>
+                        <div class="item">
+                            <div class="test-wrap">
+							<div class="test-img-box">
+								<img src="img/client-2.jpg" class="img-fluid">
+                                <h4>Khushboo<br><span>Happy customer</span></h4>
+
 							</div>
 							<div class="test-txt-box">
+                                <div class="rating-box">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+								</div>
+								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste consequuntur, architecto tempora saepe sed cumque ut nesciunt quas. Asperiores qui accusantium sunt reiciendis dicta culpa ex aliquam maiores obcaecati.</p>
+							</div>
+						</div>
+                        </div>
+                        <div class="item">
+                            <div class="test-wrap">
+							<div class="test-img-box">
+								<img src="img/client-3.jpg" class="img-fluid">
+                                <h4>Karanveer Singh<br><span>Happy customer</span></h4>
+
+							</div>
+							<div class="test-txt-box">
+                                <div class="rating-box">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+								</div>
 								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste consequuntur, architecto tempora saepe sed cumque ut nesciunt quas. Asperiores qui accusantium sunt reiciendis dicta culpa ex aliquam maiores obcaecati.</p>
 							</div>
 						</div>
