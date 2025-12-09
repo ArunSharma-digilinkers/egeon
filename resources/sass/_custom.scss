@@ -55,7 +55,7 @@ p {
 }
 
 .flex-direction {
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -384,6 +384,13 @@ a {
 }
 }
 
+
+.why-choose-product span{
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 /////////////////////// CONTACT US ///////////////////////
 
 .contact-form-wrap {
@@ -539,5 +546,58 @@ a {
 	color: #39b7e6;
 }
 .creator-link:hover {
-	color: $color-white;
+	color: #fff;
+}
+
+
+/////////////////////////////////////// MOBILE RESIZE ///////////////////////////////////////
+
+ @media only screen and (max-width: 1200px) { }
+
+ @media only screen and (max-width: 991px) { }
+
+ @media only screen and (max-width: 767px) {
+
+
+h3 {
+    font-size: 30px;
+}
+
+.header-box {
+    padding: 0;
+    text-align: center;
+}
+
+.hm-values-box {
+    padding-left: 0;
+}
+
+.about-cta-wrapper .about-btn a {
+    padding: 15px 15px;
+}
+
+.ord1 {
+    order: 1;
+}
+
+.ord2 {
+    order: 2;
+}
+
+.ord3 {
+    order: 3;
+}
+
+.ord4 {
+    order: 4;
+}
+
+.ord5 {
+    order: 5;
+}
+
+.ord6 {
+    order: 6;
+}
+
 }

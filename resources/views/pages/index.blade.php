@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="banner-wrap">
-        <img src="img/demo-banner.jpg" class="img-fluid">
+        <img src="img/home-banner.jpg" class="img-fluid">
     </div>
 
 
@@ -20,14 +20,14 @@
                     </p>
 
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                             <div class="info-box mt-1">
                                 <h4><span>10,000+ </span>Satisfied Clients</h4>
                                 <p>We're proud to serve thousands of businesses across industries with reliable solutions
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                             <div class="info-box mt-1">
                                 <h4><span>24/7 </span>Customer Support</h4>
                                 <p>Around-the-clock expert assistance whenever you need it.</p>
@@ -102,8 +102,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 direction-flex">
-                    <div class="img-box">
+                <div class="col-lg-4 col-md-4 col-sm-12 flex-direction">
+                    <div class="img-box mb-3">
                         <img src="img/collarge-img.png" class="img-fluid">
                     </div>
                 </div>
@@ -203,7 +203,7 @@
     </div>
 
 
-   <div class="testimonials-wrapper section-entry">
+<div class="testimonials-wrapper section-entry">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -270,12 +270,12 @@
 								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste consequuntur, architecto tempora saepe sed cumque ut nesciunt quas. Asperiores qui accusantium sunt reiciendis dicta culpa ex aliquam maiores obcaecati.</p>
 							</div>
 						</div>
-                        </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
-   </div>
+</div>
 
 
     

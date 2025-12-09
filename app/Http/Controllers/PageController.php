@@ -25,4 +25,21 @@ class PageController extends Controller
     {
         return view('pages.products');
     }
+
+    public function inverter()
+    {
+        return view('pages.inverter-batteries');
+    }
+
+    public function bike()
+    {
+        return view('pages.bike-batteries');
+    }
+
+    public function rickshaw()
+    {
+        return view('pages.rickshaw-batteries');
+    }
+
+    
 }

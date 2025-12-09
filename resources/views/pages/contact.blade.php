@@ -11,7 +11,7 @@
 <section class="form-section section-entry">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 col-md-7 col-md-12">
+            <div class="col-lg-7 col-md-7 col-md-12 mb-4">
                 <div class="contact-form-wrap">
                     <div class="section-title">
                         <h1>Get in Touch</h1>
