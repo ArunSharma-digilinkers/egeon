@@ -33,6 +33,9 @@
                                 <p>Around-the-clock expert assistance whenever you need it.</p>
                             </div>
                         </div>
+                        <div class="btn-1">
+                            <a href="about">Read More</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-12">
@@ -89,7 +92,7 @@
                             <p>They keep the air clean and have low heavy toxic metals.</p>
                         </div>
                         <div class="why-img">
-                            <img src="img/eco-friendly.png">
+                            <img src="img/team-expert.png">
                         </div>
                     </div>
                     <div class="why-box-left mb-4">
@@ -110,7 +113,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="why-box-right mb-4">
                         <div class="why-img">
-                            <img src="img/eco-friendly.png">
+                            <img src="img/low-maintenance.png">
                         </div>
                         <div class="why-txt">
                             <h5>Low Maintenance</h5>
@@ -119,7 +122,7 @@
                     </div>
                     <div class="why-box-right mb-4">
                         <div class="why-img">
-                            <img src="img/eco-friendly.png">
+                            <img src="img/innovation.png">
                         </div>
                         <div class="why-txt">
                             <h5>Sustainable Innovation</h5>

@@ -26,7 +26,7 @@
                         </p>
 
                         <div class="btn-1">
-                            <a href="inverter-batteries">Read More</a>
+                            <a href="#">Read More</a>
                         </div>
                      </div>
                 </div>
@@ -49,7 +49,7 @@
                             Our range of Motorcycles delivers an exciting blend of power, performance, and energy efficiency. These vehicles are designed to provide an eco-friendly alternative to traditional fuel-powered bikes, offering superior acceleration and low maintenance costs. With cutting-edge technology, our motorcycles are perfect for riders who want to enjoy the thrill of the road while reducing their carbon footprint.
                         </p>
                         <div class="btn-1">
-                            <a href="bike-batteries">Read More</a>
+                            <a href="#">Read More</a>
                         </div>
                      </div>
                 </div>
@@ -61,7 +61,7 @@
                            Our E-Rickshaws are an innovative, cost-effective, and eco-friendly transportation solution designed for urban mobility. With zero emissions and efficient battery technology, they provide a cleaner alternative to traditional rickshaws and are perfect for short-distance commutes in congested urban areas. Built for comfort, reliability, and affordability, these e-rickshaws are a step towards a greener, more sustainable future.
                         </p>
                         <div class="btn-1">
-                            <a href="rickshaw-batteries">Read More</a>
+                            <a href="#">Read More</a>
                         </div>
                      </div>
                 </div>

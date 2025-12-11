@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('category');
             $table->string('model'); 
             $table->string('voltage');
-            $table->string('capacity');
+            $table->string('capacity')->nullable();
             $table->string('warranty');
             $table->string('image');
             $table->timestamps();

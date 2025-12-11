@@ -44,7 +44,7 @@ class ProductController extends Controller
             'category' =>'required|string',
             'model' => 'required|string',
             'voltage' => 'nullable|string',
-            'capacity' => 'nullable|string|max:255',
+            'capacity' => 'nullable|string',
             'warranty' =>'nullable|string',
             'image' => 'required|image|file|mimes:jpg,jpeg,png,gif,svg|max:2048',
 
