@@ -1,43 +1,76 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 
-<main class="section-entry">
-    <div class="container">
-        <div class="row">
-            <!-- Create Product Button -->
-            <div class="admin-btn mt-4 mb-5">
-                <a href="{{ route('product.create') }}" class="btn btn-primary">Create a Product</a>
-            </div>
+<div class="admin-page section-entry">
 
-            <!-- Displaying Products -->
-            @foreach($product as $item)
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <!-- Product Image -->
-                        <img src="{{ asset('storage/product/' . $item->image) }}" alt="Image" class="card-img-top">
-                        
-                        <!-- Product Details -->
-                        <div class="card-body">
-                            <p><strong>Category:</strong> {{ $item->category }}</p>
-                            <p><strong>Model:</strong> {{ $item->model }}</p>
-                        </div>
-
-                        <!-- Action Buttons (Edit/Delete) -->
-                        <div class="card-footer">
-                            <a href="{{ route('product.edit', $item->id) }}" class="btn btn-info btn-sm">Edit</a>
-                            <form action="{{ route('product.destroy', $item->id) }}" method="POST" class="d-inline">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm"
-                                    onclick="return confirm('Are you sure you want to delete?')">Delete</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+    {{-- Page Header --}}
+    <div class="page-header">
+        <div>
+            <h1>Products</h1>
+            <p class="text-muted">Manage all products</p>
         </div>
+
+        <a href="{{ route('product.create') }}" class="btn btn-primary mb-4">
+            + Add Product
+        </a>
     </div>
-</main>
+
+    <div class="row g-4">
+
+        @forelse($product as $item)
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card product-card">
+
+                    {{-- Image --}}
+                    <div class="product-image">
+                        <img src="{{ asset('storage/product/'.$item->image) }}"
+                             alt="{{ $item->model }}">
+                    </div>
+
+                    {{-- Body --}}
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">
+                            {{ ucfirst($item->category) }}
+                        </span>
+
+                        <h5 class="product-title">
+                            {{ $item->model }}
+                        </h5>
+                    </div>
+
+                    {{-- Footer --}}
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+
+                        <a href="{{ route('product.edit', $item->id) }}"
+                           class="btn btn-sm btn-outline-primary">
+                            Edit
+                        </a>
+
+                        <form action="{{ route('product.destroy', $item->id) }}"
+                              method="POST"
+                              onsubmit="return confirm('Delete this product?')">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-sm btn-outline-danger">
+                                Delete
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        @empty
+            <div class="col-12">
+                <div class="alert alert-info">
+                    No products found.
+                </div>
+            </div>
+        @endforelse
+
+    </div>
+
+</div>
 
 @endsection
