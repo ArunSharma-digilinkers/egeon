@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light dd-nav">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="" alt="">
+        <a class="navbar-brand" href="">
+            <img src="img/logo.png" alt="" class="img-fluid logo-img">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +13,13 @@
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="{{url("about")}}">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url("products")}}">our products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url("contact")}}">Contact us</a>
                 </li>
                 @if (Auth::check())
                     <li class="nav-item dropdown">

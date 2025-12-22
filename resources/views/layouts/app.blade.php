@@ -3,7 +3,7 @@
 
 <!-- Page Content -->
 <main>
-    <div class="pdt-huge pdb-huge">
+    <div class="">
         @yield('content')
     </div>
 </main>
