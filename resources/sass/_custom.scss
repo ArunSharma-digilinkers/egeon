@@ -601,3 +601,167 @@ h3 {
 }
 
 }
+
+
+// Admin Panel
+.navbar {
+	background-color: #131a2c!important;
+	-webkit-box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.2);
+    padding: 0;
+}
+
+.logo-img {
+    width: 115px;
+}
+.nav-item {
+	padding-left: 2rem;
+}
+.nav-link {
+	color: #000000!important;
+	line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-toggler {
+	border:2px solid #fff;
+}
+
+/* add your custome hamburger icon */
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(../img/toggler.png);
+}
+
+.navbar-dark .navbar-toggler:focus {
+	outline: none;
+} 
+
+.customNav  {
+	background-color: #ee3739!important;
+	-webkit-box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.2);
+	animation: navSlide 1s ease forwards;
+}
+
+@keyframes navSlide {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+
+.admin-sidebar {
+  background: #eee;
+  color: #d46323!important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #d7d9db;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+  }
+}
+
+/* Navigation */
+.sidebar-nav {
+  flex: 1;
+  padding: 20px 0;
+
+  .nav-link {
+    display: block;
+    padding: 12px 24px;
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #cfcfcf;
+      color: #ffffff;
+    }
+
+    &.active {
+       background: #023399;
+       color: #ffffff !important;
+    }
+  }
+}
+
+/* Footer */
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid #d7d9db;
+
+  .logout-btn {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: #f87171;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #a4a4a4;
+      color: #ffffff;
+    }
+  }
+}
+
+.product-card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.product-image {
+  height: 200px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 15px;
+  }
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.card-footer {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+
+
+// Dashboard

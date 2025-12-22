@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 
@@ -11,34 +11,54 @@
 
         <div class="row">
             @forelse ($blogs as $blog)
-                <div class="col-md-4 mt-4">
-                    <div class="card h-100">
-                     @if($blog->featured_image && Storage::disk('public')->exists('blog/' . $blog->featured_image))
-                                 <img src="{{ asset('storage/blog/' . $blog->featured_image) }}" class="card-img-top" alt="Uploaded Image">
-                        @else
-                            <img src="{{ asset('images/default.jpg') }}" class="card-img-top" alt="Default Image">
-                        @endif
+            <div class="col-md-4 mt-4">
+                <div class="card h-100 shadow-sm border-0 blog-admin-card">
 
-                        <div class="card-body">
-                            <h4 class="card-title">{{ $blog->post_title }}</h4>
-                            <p class="card-text">{!! Str::words(strip_tags($blog->blog_post), 20, '...') !!}</p>
-                        </div>
+                    {{-- Blog Image --}}
+                    @if($blog->featured_image &&
+                    \Illuminate\Support\Facades\Storage::disk('public')->exists('blog/'.$blog->featured_image))
+                    <img src="{{ asset('storage/blog/'.$blog->featured_image) }}" class="card-img-top blog-img"
+                        alt="{{ $blog->post_title }}">
+                    @else
+                    <img src="{{ asset('images/default.jpg') }}" class="card-img-top blog-img" alt="Default Image">
+                    @endif
 
-                        <div class="card-footer d-flex justify-content-between">
-                            <a href="{{ route('blog.edit', $blog->id) }}" class="btn btn-sm btn-warning">Edit</a>
-                            <form action="{{ route('blog.destroy', $blog->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this post?')">
+                    {{-- Card Body --}}
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold mb-2">
+                            {{ $blog->post_title }}
+                        </h5>
+
+                        <p class="card-text text-muted mb-3">
+                            {!! \Illuminate\Support\Str::words(strip_tags($blog->blog_post), 20, '...') !!}
+                        </p>
+
+                        <div class="mt-auto d-flex justify-content-between">
+                            <a href="{{ route('blog.edit', $blog->id) }}" class="btn btn-sm btn-outline-warning">
+                                ✏️ Edit
+                            </a>
+
+                            <form action="{{ route('blog.destroy', $blog->id) }}" method="POST"
+                                onsubmit="return confirm('Are you sure you want to delete this post?')">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                <button type="submit" class="btn btn-sm btn-outline-danger">
+                                    🗑 Delete
+                                </button>
                             </form>
                         </div>
                     </div>
+
                 </div>
+            </div>
             @empty
-                <div class="col-12 mt-4">
-                    <div class="alert alert-info">No posts found.</div>
+            <div class="col-12">
+                <div class="alert alert-info text-center">
+                    No blog posts found.
                 </div>
+            </div>
             @endforelse
+
         </div>
     </div>
 </div>

@@ -1,74 +1,122 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 
-<main class="section-entry">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <h2>Add Products</h2>
-                
-                <!-- Display Validation Errors -->
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
+<div class="admin-page section-entry">
 
-                <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data" class="container mt-4">
-                    @csrf
+    {{-- Page Header --}}
+    <div class="page-header">
+        <div>
+            <h1>Add Product</h1>
+            <p class="text-muted">Create a new product</p>
+        </div>
 
-                    <!-- Category Dropdown -->
-                    <div class="mb-3">
-                        <label for="category" class="form-label">Category</label>
+        <a href="{{ route('product.index') }}" class="btn btn-outline-secondary">
+            ← Back to Products
+        </a>
+    </div>
+
+    {{-- Card --}}
+    <div class="card admin-card">
+
+        <div class="card-body">
+
+            {{-- Validation Errors --}}
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul class="mb-0">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <form action="{{ route('product.store') }}"
+                  method="POST"
+                  enctype="multipart/form-data">
+
+                @csrf
+
+                <div class="row">
+
+                    {{-- Category --}}
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Category</label>
                         <select name="category" class="form-control" required>
-                            <option disabled selected>Choose Option</option>
+                            <option disabled selected>Choose category</option>
                             <option value="inverter">Inverter Batteries</option>
                             <option value="rickshaw">Rickshaw Batteries</option>
                             <option value="bike">Bike Batteries</option>
                         </select>
                     </div>
 
-                    <!-- Model Input -->
-                    <div class="mb-3">
-                        <label for="model" class="form-label">Model</label>
-                        <input type="text" class="form-control" id="model" name="model" placeholder="Enter the model name" required>
+                    {{-- Model --}}
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Model</label>
+                        <input type="text"
+                               name="model"
+                               class="form-control"
+                               placeholder="Enter model name"
+                               required>
                     </div>
 
-                    <!-- Voltage Input -->
-                    <div class="mb-3">
-                        <label for="voltage" class="form-label">Voltage</label>
-                        <input type="text" class="form-control" id="voltage" name="voltage" placeholder="Enter the voltage value">
+                    {{-- Voltage --}}
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Voltage</label>
+                        <input type="text"
+                               name="voltage"
+                               class="form-control"
+                               placeholder="e.g. 12V">
                     </div>
 
-                    <!-- Capacity Input -->
-                    <div class="mb-3">
-                        <label for="capacity" class="form-label">Capacity</label>
-                        <input type="text" class="form-control" id="capacity" name="capacity" placeholder="Enter the capacity value">
+                    {{-- Capacity --}}
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Capacity</label>
+                        <input type="text"
+                               name="capacity"
+                               class="form-control"
+                               placeholder="e.g. 150Ah">
                     </div>
 
-                    <!-- Warranty Input -->
-                    <div class="mb-3">
-                        <label for="total_warranty" class="form-label">Warranty</label>
-                        <input type="text" class="form-control" id="warranty" name="warranty" placeholder="Enter the warranty period">
-                    </div>
-                    
-                    <!-- Image Upload Input -->
-                    <div class="mb-3">
-                        <label for="image" class="form-label">Image</label>
-                        <input class="form-control" type="file" id="image" name="image" accept="image/*" required>
+                    {{-- Warranty --}}
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Warranty</label>
+                        <input type="text"
+                               name="warranty"
+                               class="form-control"
+                               placeholder="e.g. 36 Months">
                     </div>
 
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
+                    {{-- Image --}}
+                    <div class="col-md-6 mb-4">
+                        <label class="form-label">Product Image</label>
+                        <input type="file"
+                               name="image"
+                               class="form-control"
+                               accept="image/*"
+                               required>
+                    </div>
+
+                </div>
+
+                {{-- Actions --}}
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        Save Product
+                    </button>
+
+                    <a href="{{ route('product.index') }}"
+                       class="btn btn-light ms-2">
+                        Cancel
+                    </a>
+                </div>
+
+            </form>
+
         </div>
     </div>
-</main>
+
+</div>
 
 @endsection
