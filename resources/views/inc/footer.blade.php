@@ -1,6 +1,5 @@
 </div>
 
-
 <div class="footer-wrapper section-entry">
 			<div class="container">
 				<div class="row">
@@ -9,6 +8,7 @@
 							<img src="img/logo.png" class="img-fluid">
 						</div>
 						<p class="pl-3">At Egeone Batteries, we specialize in delivering cutting-edge energy storage products built for reliability and performance. </p>
+
 						<ul class="footer-social-list mb-4">
 							<li class="pr-3">
 								<a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -24,7 +24,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="col-lg-4 col-md-4 col-sm-12 footer-links">
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<h5>Quick Links</h5>

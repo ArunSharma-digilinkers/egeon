@@ -28,7 +28,7 @@
                 <div class="col-md-12">
                     <div class="mb-3">
                         <label class="form-label">Blog Post</label>
-                        <textarea name="blog_post" id="editor" class="form-control" rows="6" required></textarea>
+                        <textarea name="blog_post" id="editor1" class="form-control" rows="6" required></textarea>
                     </div>
                 </div>
 
