@@ -1,66 +1,87 @@
 </div>
 
 <div class="footer-wrapper section-entry">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12 mrb30">
-						<div class="footer-logo">
-							<img src="img/logo.png" class="img-fluid">
-						</div>
-						<p class="pl-3">At Egeone Batteries, we specialize in delivering cutting-edge energy storage products built for reliability and performance. </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 mrb30">
+                <div class="footer-logo">
+                    <img src="{{ asset('img/logo.png') }}" class="img-fluid">
+                </div>
+                <p class="pl-3">At Egeone Batteries, we specialize in delivering cutting-edge energy storage products
+                    built for reliability and performance. </p>
 
-						<ul class="footer-social-list mb-4">
-							<li class="pr-3">
-								<a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
-							</li>
-							<li class="pr-3">
-								<a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-							</li>
-							<li class="pr-3">
-								<a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-							</li>
-							<li class="pr-3">
-								<a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 footer-links">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<h5>Quick Links</h5>
-								<ul>
-									<li>About us</li>
-									<li>Gallery</li>
-									<li>Privacy Policy</li>
-									<li>Terms and Conditions</li>
-									<li>Contact us</li>
-								</ul>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<h5>Our services</h5>
-								<ul>
-									<li>Solar Battery</li>
-									<li>Solar Panel</li>
-									<li>Lead Acid Battery</li>
-									<li>Lithium Ion</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<p>Sign up for exciting news, learn more about our events and get great travel ideas.</p>
-						<div class="newsletter-box">
-							<p class="newsletter-title">Join Our Newsletter</p>
-							<form class="newsletter-form">
-								<input type="email" placeholder="Email" required="">
-								<button type="submit">Join Now</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
+                <ul class="footer-social-list mb-4">
+                    <li class="pr-3">
+                        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="pr-3">
+                        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="pr-3">
+                        <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="pr-3">
+                        <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 footer-links">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('about') }}">
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('contact') }}">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h5>Our services</h5>
+                        <ul>
+                            <li>
+                                <a href="{{ url('inverter-batteries') }}">Tall Tubular Batteries</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('bike-batteries') }}">Bike Batteries</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('rickshaw-batteries') }}">Rickshaw Batteries</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <p>Sign up for exciting news, learn more about our events and get great travel ideas.</p>
+                <div class="newsletter-box">
+                    <p class="newsletter-title">Join Our Newsletter</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email" required="">
+                        <button type="submit">Join Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		</div>
+</div>
 
 
 <!-- jQuery -->

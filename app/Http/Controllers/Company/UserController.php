@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Company;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\BatteryRegistration;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
@@ -49,12 +50,15 @@ class UserController extends Controller
         return redirect()->route('company.users.index')->with('success', 'User created successfully');
     }
 
-      public function dashboard()
-    {
-        // Optional: stats
-        $dealerCount = User::where('role','dealer')->count();
-        $distributorCount = User::where('role','distributor')->count();
+   public function dashboard()
+{
+    $stats = [
+        'users'        => User::count(),
+        'dealers'      => User::where('role', 'dealer')->count(),
+        'distributors' => User::where('role', 'distributor')->count(),
+        'warranties'   => BatteryRegistration::count(),
+    ];
 
-        return view('company.dashboard', compact('dealerCount','distributorCount'));
-    }
+    return view('company.dashboard', compact('stats'));
+}
 }

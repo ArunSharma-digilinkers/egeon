@@ -10,7 +10,7 @@ $('.owl-carousel').owlCarousel({
             items:1
         },
         600:{
-            items:3
+            items:2
         },
         1000:{
             items:3
@@ -19,6 +19,16 @@ $('.owl-carousel').owlCarousel({
 })
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('#homeSlider');
+
+    new bootstrap.Carousel(slider, {
+        interval: 3000,   // 3 seconds
+        ride: 'carousel',
+        pause: false,
+        wrap: true
+    });
+});
 
 // Get all the FAQ buttons
 const faqButtons = document.querySelectorAll('.faq-btn');

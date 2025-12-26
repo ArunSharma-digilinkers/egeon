@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class BatteryRegistration extends Model
-{
-    use HasFactory;
+{ use HasFactory;
 
     protected $fillable = [
         'dealer_id',
@@ -18,6 +17,11 @@ class BatteryRegistration extends Model
         'state',
         'warranty_start',
         'warranty_end',
+    ];
+
+    protected $casts = [
+        'warranty_start' => 'datetime',
+        'warranty_end' => 'datetime',
     ];
 
     // Dealer relationship

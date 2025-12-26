@@ -55,7 +55,7 @@ Custom SASS Styles
 
 /* Login Button */
 .login-btn {
-    background: linear-gradient(135deg, #d5661b, #da5d1e);
+   
     color: #fff !important;
     padding: 8px 22px;
     font-weight: 500;
@@ -63,7 +63,7 @@ Custom SASS Styles
     margin-left: 15px;
 
     &:hover {
-        background: linear-gradient(135deg, #d5661b, #da5d1e);
+        background: linear-gradient(135deg, #f3f2f1, #f3f2f1);
         transform: translateY(-2px);
     }
 }
@@ -750,6 +750,9 @@ p {
         font-weight: 300;
         list-style: none;
         
+        a {
+            color: #fff;
+        }
     }
 
     h5 {
@@ -1001,6 +1004,263 @@ p {
             color: #ffffff;
         }
     }
+}
+
+.product-card-wrap {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.product-card-wrap:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.img-product {
+    background: #f8f9fa;
+    padding: 25px;
+}
+
+.img-product img {
+    max-height: 220px;
+    width: auto;
+    transition: transform 0.4s ease;
+}
+
+.product-card-wrap:hover .img-product img {
+    transform: scale(1.08);
+}
+
+/* Details */
+.product-details {
+    padding: 20px 15px 10px;
+}
+
+.product-details h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.product-detail-btn {
+    padding: 0 0 25px;
+}
+
+.product-detail-btn a {
+    display: inline-block;
+    padding: 10px 26px;
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.product-detail-btn a:hover {
+    background: linear-gradient(135deg, #084298, #0d6efd);
+    transform: scale(1.05);
+}
+
+/* Image box */
+.battery-img-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.battery-img-box img {
+    max-height: 350px;
+    transition: transform 0.4s ease;
+}
+
+.battery-img-box:hover img {
+    transform: scale(1.05);
+}
+
+/* Details */
+.battery-details-box {
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.battery-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #212529;
+}
+
+/* Specs */
+.spec-box {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    background: #f3f3f3;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.spec-box span {
+    font-size: 14px;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+
+.spec-box strong {
+    font-size: 18px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.spec-box:hover {
+    background: #eef3ff;
+    transform: translateY(-4px);
+}
+
+.page-banner {
+    position: relative;
+    padding: 90px 0;
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    overflow: hidden;
+}
+
+/* Subtle pattern overlay */
+.page-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='rgba(255,255,255,0.15)'/%3E%3C/svg%3E");
+    opacity: 0.2;
+}
+
+.page-banner-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.page-banner-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.page-banner-content p {
+    font-size: 16px;
+    opacity: 0.9;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-banner {
+        padding: 60px 0;
+    }
+
+    .page-banner-content h2 {
+        font-size: 30px;
+    }
+}
+
+/* Card */
+.blog-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.blog-card-img {
+    overflow: hidden;
+}
+
+.blog-card-img img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-card-img img {
+    transform: scale(1.08);
+}
+
+/* Content */
+.blog-card-content {
+    padding: 25px;
+}
+
+.blog-date {
+    font-size: 13px;
+    color: #6c757d;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.blog-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #212529;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.blog-excerpt {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Read more */
+.read-more {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover .read-more {
+    letter-spacing: 0.5px;
+}
+
+/* Link reset */
+.blog-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Highlight warranty */
+.spec-box.highlight {
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    color: #fff;
+}
+
+.spec-box.highlight span,
+.spec-box.highlight strong {
+    color: #fff;
 }
 
 .product-card {

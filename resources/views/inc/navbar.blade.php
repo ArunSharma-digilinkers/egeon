@@ -26,11 +26,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('warranty-registration') }}">Warranty Registration</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="{{ route('blog') }}">Blog</a>
                 </li>
 
                 <li class="nav-item">

@@ -1,9 +1,10 @@
 @extends('layouts.admin')
 
 @section('content')
+
 <div class="container-fluid section-entry">
     <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-10 mx-auto">
 
             <div class="card shadow-sm">
                 <div class="card-header">

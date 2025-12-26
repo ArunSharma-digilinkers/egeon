@@ -3,10 +3,8 @@
 @section('content')
 
 <div class="banner-wrap">
-    <img src="img/contact-banner.jpg" class="img-fluid">
+    <img src="{{ asset('img/contact-banners.jpg') }}" class="img-fluid">
 </div>
-
-
 
 <section class="form-section section-entry">
     <div class="container">

@@ -4,9 +4,8 @@
 
 @section('content')
 <div class="container-fluid section-entry">
-
     <div class="row">
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-10 mx-auto">
 
             <div class="card shadow-sm">
                 <div class="card-header">
@@ -15,59 +14,53 @@
 
                 <div class="card-body">
 
-                    @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <ul class="mb-0">
-                                @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-
-                    @if (session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
-                        </div>
-                    @endif
-
                     <form method="POST" action="{{ route('dealer.warranty.store') }}">
                         @csrf
 
+                        <!-- Customer -->
                         <div class="mb-3">
                             <label class="form-label">Customer Name</label>
-                            <input type="text"
-                                   name="customer_name"
-                                   class="form-control"
-                                   value="{{ old('customer_name') }}"
-                                   required>
+                            <input type="text" name="customer_name" class="form-control" required>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Customer Mobile</label>
-                            <input type="text"
-                                   name="customer_mobile"
-                                   class="form-control"
-                                   value="{{ old('customer_mobile') }}"
-                                   maxlength="10"
-                                   required>
+                            <input type="text" name="customer_mobile" class="form-control" maxlength="10" required>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <label class="form-label">Battery Model</label>
-                            <input type="text"
-                                   name="battery_model"
-                                   class="form-control"
-                                   value="{{ old('battery_model') }}"
-                                   required>
+                            <input type="text" name="battery_model" class="form-control" required>
                         </div>
 
-                        <div class="d-flex justify-content-end">
-                            <button type="submit" class="btn btn-primary px-4">
-                                Register Warranty
-                            </button>
+                        <div class="mb-3">
+                            <label class="form-label">Warranty Duration</label>
+                            <select name="warranty_months" id="warranty_months" class="form-select" required>
+                                <option value="">-- Select Warranty --</option>
+                                <option value="12">12 Months</option>
+                                <option value="24">24 Months</option>
+                                <option value="36">36 Months</option>
+                                <option value="48">48 Months</option>
+                                <option value="60">60 Months</option>
+                            </select>
                         </div>
 
+                        <!-- Auto dates -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Warranty Start</label>
+                                <input type="text" id="warranty_start" class="form-control" readonly>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Warranty End</label>
+                                <input type="text" id="warranty_end" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+                            Register Warranty
+                        </button>
                     </form>
 
                 </div>
@@ -75,6 +68,26 @@
 
         </div>
     </div>
-
 </div>
+
+{{-- JS --}}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const monthsSelect = document.getElementById('warranty_months');
+    const startInput   = document.getElementById('warranty_start');
+    const endInput     = document.getElementById('warranty_end');
+
+    const today = new Date();
+    startInput.value = today.toISOString().split('T')[0];
+
+    monthsSelect.addEventListener('change', function () {
+        if (!this.value) return;
+
+        let endDate = new Date(today);
+        endDate.setMonth(endDate.getMonth() + parseInt(this.value));
+
+        endInput.value = endDate.toISOString().split('T')[0];
+    });
+});
+</script>
 @endsection

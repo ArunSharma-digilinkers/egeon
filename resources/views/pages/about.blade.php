@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="banner-wrap">
-        <img src="img/about-banner.jpg" class="img-fluid">
+        <img src="{{ asset('img/about-banner.jpg') }}" class="img-fluid">
     </div>
 
     <div class="ab-info section-entry">

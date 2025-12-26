@@ -2,9 +2,9 @@
     <div class="sidebar-header">
         <h2>
             @if(auth()->user()->role === 'company')
-                Super Admin Panel
+               {{ auth()->user()->name }}
             @elseif(auth()->user()->role === 'distributor')
-                Distributor Panel
+               Distributor Panel {{ auth()->user()->name }}
             @elseif(auth()->user()->role === 'dealer')
                 Dealer Panel
             @endif
@@ -18,6 +18,14 @@
 
             <a href="{{ route('company.dashboard') }}" class="nav-link">
                 Dashboard
+            </a>
+
+             <a href="{{ route('product.create') }}" class="nav-link">
+                Add Product
+            </a>
+
+             <a href="{{ route('product.index') }}" class="nav-link">
+                View Product
             </a>
 
             <a href="{{ route('company.users.create') }}" class="nav-link">
@@ -44,9 +52,9 @@
                 Dashboard
             </a>
 
-            <!-- <a href="{{ route('distributor.warranties') }}" class="nav-link">
-                State Warranties
-            </a> -->
+            <a href="{{ route('distributor.check-warranty') }}" class="nav-link">
+                Warranties
+            </a>
 
         {{-- ================= DEALER ================= --}}
         @elseif(auth()->user()->role === 'dealer')
@@ -57,6 +65,9 @@
 
             <a href="{{ route('dealer.warranty.create') }}" class="nav-link">
                 Register Warranty
+            </a>
+            <a href="{{ route('dealer.view-warranty') }}" class="nav-link">
+               View Warranty
             </a>
 
 
